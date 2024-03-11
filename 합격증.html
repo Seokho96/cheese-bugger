@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>더블클래식치즈버거 자격증</title>
+    <style>
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0; /* body의 기본 마진 제거 */
+    padding: 0; /* body의 기본 패딩 제거 */
+  }
+
+  .blur-background {
+    background-image: url('./bugger.webp'); /* 배경 이미지 URL을 적절히 변경하세요 */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* 다른 콘텐츠 위에 겹쳐지도록 설정 */
+    /* filter: blur(8px); 이미지를 흐리게 만듭니다. */
+    opacity: 0.5;
+  }
+
+  span {
+    font-weight: bold;
+  }
+      .mt10 {
+        padding-top: 10px;
+      }
+      .df {
+        display: flex;
+      }
+      .contents {
+    padding-top: 150px;
+    z-index: 1; /* 다른 콘텐츠 위에 올려지도록 설정 */
+    position: relative;
+  }
+
+
+      /* 모바일 */
+      @media (max-width: 767px) {
+        .contents > div > span {
+          margin-left: 30px !important;
+        }
+        /* .contents > div > span > span {
+          margin-left: 10px !important;
+        } */
+        br.break-t {
+          display: none;
+        }
+        br.break-m {
+          display: inline;
+        }
+       
+        small-span{
+          margin-left: 20px !important;
+        }
+        .footerDiv {
+        padding-top: 200px;
+        text-align: center;
+      }
+
+      }
+      /* 테블릿 세로 */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .contents > div > span {
+          margin-left: 100px !important;
+        }
+        .contents > div > span > span {
+          margin-left: 80px !important;
+        }
+        br.break-m {
+          display: none;
+        }
+        br.break-t {
+          display: inline;
+        }
+        .span-t{
+          margin-left: 100px !important;
+        }
+        .footerDiv {
+        padding-top: 400px;
+        text-align: center;
+      }
+   
+      }
+      @media (min-width: 768px) and (max-width: 800px) {
+        .contents > div > span {
+          margin-left: 80px !important;
+        }
+        .span-t{
+          margin-left: 80px !important;
+        }
+      }
+      /* 테블릿 가로 */
+      @media (min-width: 1025px) and (max-width: 1199px) {
+        .contents > div > span {
+          margin-left: 100px !important;
+        }
+        .contents > div > span > span {
+          margin-left: 80px !important;
+        }
+        br.break-m {
+          display: none;
+        }
+        br.break-t {
+          display: none;
+        }
+        .footerDiv {
+        padding-top: 300px;
+        text-align: center;
+      }
+ 
+      }
+      
+      /* 데스크탑 일반 */
+      @media (min-width: 1200px) {
+        .contents {
+          margin-left: 150px !important;
+        }
+        /* .contents > div > span {
+          margin-left: 150px !important;
+        }
+        .contents > div > span > span {
+          margin-left: 130px !important;
+        } */
+        br.break-m {
+          display: none;
+        }
+        .footerDiv {
+        padding-top: 300px;
+        text-align: center;
+
+      }
+
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="blur-background"></div>
+    <header>
+      <div style="text-align: center; padding-top: 80px">
+        <b style="font-size: 2rem">자&nbsp;&nbsp;&nbsp;격&nbsp;&nbsp;&nbsp;증</b>
+      </div>
+    </header>
+      <div style="padding-top: 40px">
+        <div style="width: 80%; height: auto; margin: auto">
+          <!-- 성명 -->
+          <div class="df">
+            <div style="flex: 1">
+              <span>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</span>
+            </div>
+            <div style="flex: 1">
+              <span>최예영</span>
+            </div>
+            <div style="flex: 1"></div>
+          </div>
+          <!-- 생년월일 -->
+          <div class="mt10 df">
+            <div style="flex: 1">
+              <span>생년월일</span>
+            </div>
+            <div style="flex: 1">
+              <span>1997-09-25</span>
+            </div>
+            <div style="flex: 1"></div>
+          </div>
+          <!-- 과정명 -->
+          <div class="mt10 df">
+            <div style="flex: 1">
+              <span>분&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;야</span>
+            </div>
+            <div style="flex: 2">
+              <span>더블클래식치즈버거</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 150px" class="contents">
+        <div style="height: auto; margin: auto; line-height: 2rem;">
+          <span 
+            >위의 사람은 롯데리아버거시험령에 의하여<br class="break-m" />
+            <small-span>시행한 2024년도 더블클래식치즈버거자격시험에</small-span><br class="break-m break-t" />
+            <small-span class="span-t">합격하였으므로 위와같이 자격을 인정합니다.</small-span>
+          </span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerDiv">
+        
+        <h2><span style="color: red;">LLOTERIA</span> 손님 강씨</h2>
+      </div>
+    </footer>
+  </body>
+</html>
+
